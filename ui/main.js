@@ -15,10 +15,10 @@ button.onclick = function () {
             }
         }
         // Not Done Yet
-    }
+    };
     
     // Make the request
     request.open('GET','http://nd7493432401.imad.hasura-app.io/counter',true);
     request.send(null);
     
-}
+};
