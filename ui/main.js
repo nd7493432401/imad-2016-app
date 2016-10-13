@@ -51,6 +51,6 @@ submit.onclick = function () {
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
 
-    request.open('GET','http://nd7493432401.imad.hasura-app.io/counter',true);
+    request.open('GET','http://nd7493432401.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
 };
