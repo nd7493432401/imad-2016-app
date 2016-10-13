@@ -1,4 +1,7 @@
 //Counter Code
+var url = 'http://localhost:8080/';
+// var url = 'http://nd7493432401.imad.hasura-app.io/';
+
 var button = document.getElementById('counter');
 button.onclick = function () {
     
@@ -18,7 +21,7 @@ button.onclick = function () {
     };
     
     // Make the request
-    request.open('GET','http://nd7493432401.imad.hasura-app.io/counter',true);
+    request.open('GET',url + 'counter',true);
     request.send(null);
     
 };
@@ -51,6 +54,6 @@ submit.onclick = function () {
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
 
-    request.open('GET','http://nd7493432401.imad.hasura-app.io/submit-name?name=' + name,true);
+    request.open('GET',url + 'submit-name?name=' + name,true);
     request.send(null);
 };
